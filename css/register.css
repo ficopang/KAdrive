@@ -1,0 +1,163 @@
+*{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+head{
+    display: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 42vw;
+    margin-top: 20vh;
+    padding: 3vw 3vw;
+
+    border: 0.01vw solid rgba(128, 128, 128, 0.329);
+    border-radius: 0.3vw;
+
+}
+
+form{
+    align-items: start;
+    width: 60%;
+    /* background-color: red; */
+}
+
+#acc{
+    margin-left: 3vw;
+    width: 16vw;
+}
+
+#logo{
+    width: 6vw;
+}
+
+h1{
+    margin-top: 1.5vw;
+    margin-bottom: 0.4vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+p{
+    margin: 0;
+    margin-bottom: 2vw;
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+
+.form-component{
+    width: 100%;
+}
+
+.form-component input{
+    width: 97%;
+    height: 5vh;
+    
+    margin-bottom: 1.5vw;
+
+    border: 0.01vw solid rgba(128, 128, 128, 0.329);
+    border-radius: 0.2vw;
+
+    box-sizing: border-box;
+    
+    padding: 0 0.5vw;
+    
+}
+
+.form-component input:focus{
+    outline: none !important;
+    border:0.01vw solid rgb(38, 111, 207);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 1vw;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 1.1vw;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 1.1vw;
+}
+
+.pw-field{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    padding: 0 0.3vw;
+}
+
+.pw-field input{
+    width: 48%;
+}
+
+.error-msg{
+    width: 100%;
+    color: rgb(240, 24, 24);
+    padding-left: 0.7vw;
+}
+
+.error-msg p{
+    width: 100%;
+    font-size: 1vw;
+    align-items: start;
+}
+
+.form-buttons{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    justify-content: space-between;
+
+    margin-top: 7vh;
+}
+
+a{
+    text-decoration: none;
+    font-size: 0.95vw;
+    font-weight: 600;
+
+    color: rgb(38, 111, 207);
+}
+
+.login-btn{
+    cursor: pointer;
+    padding: 0.35vw 0.5vw;
+
+    background-color: white;
+
+    border: none;
+    border-radius: 0.2vw;
+
+}
+
+.login-btn:hover{
+    background-color: rgba(24, 105, 212, 0.055);
+}
+
+.continue-btn{
+    cursor: pointer;
+    padding: 0.5vw 1.4vw;
+
+    border:  none;
+    border-radius: 0.2vw;
+
+    background-color: rgb(24, 106, 212);
+    color: white;
+
+    font-weight: 600;
+}
+
+.continue-btn:hover{
+    background-color: rgb(20, 93, 189);
+}

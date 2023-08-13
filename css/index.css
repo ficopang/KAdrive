@@ -1,0 +1,111 @@
+*{
+    overflow-x: hidden;
+}
+
+.error-msg{
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 10vh;
+
+    padding: 0 2vw;
+    font-size: 1.3vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f75050;
+    color: white;
+}
+
+.error-msg button{
+    background-color: transparent;
+    border: none;
+
+    font-size: 1.5vw;
+    color: white;
+
+    cursor: pointer;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.left-c{
+    padding-top: 2vw;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-c a{
+    background-color: white;
+    height: 6vh;
+    border: none;
+    border-top-right-radius: 1.4vw;
+    border-bottom-right-radius: 1.4vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 2vw;
+
+    font-size: 1vw;
+    font-weight: 600;
+    color: rgb(83, 83, 83);
+
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.left-c a:hover{
+    background-color: rgba(15, 95, 199, 0.158);
+    color: #4a47ff;
+}
+
+.right-c{
+    box-sizing: border-box;
+
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 100vh;
+}
+
+.curr-dir{
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+.top-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-buttons input{
+    height: 6vh;
+
+    background-color: white;
+    color: rgb(36, 36, 36);
+    
+    border: none;
+    border-radius: 0.4vw;
+    cursor: pointer;
+
+    font-weight: 500;
+}
+
+.top-buttons input:hover{
+    background-color: rgba(184, 184, 184, 0.322);
+}
+
+.top-buttons input:disabled{
+    display: none;
+}
